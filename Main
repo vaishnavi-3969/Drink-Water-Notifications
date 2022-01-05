@@ -1,8 +1,10 @@
 import time
+import winsound
 from win10toast import ToastNotifier
 import datetime
 
 name = input("What is your name? ")
+
 def getTimeInput():
     hour = int(input("Hours of interval :"))
     minutes = int(input("Minutes of interval :"))
@@ -21,9 +23,11 @@ def log():
 
 def notify():
     notification = ToastNotifier()
-    notification.show_toast("Time to drink water", "Hello " + name + " I am Waterify!:)\nIts your time to drink Water!!\nRead More...",
+    notification.show_toast("Time to drink water", "Hello " + name + " I am Waterify!:)\nTime to drink Water!!",
                             duration=4,
-                            icon_path="icon.ico")
+                            icon_path="C://Users//hp//Pictures//icon.ico")
+
+    winsound.Beep(1000, 550) #duration in millisecond(1000) and frequency(550)
     log()
     return 0
 
