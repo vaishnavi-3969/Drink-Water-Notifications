@@ -21,10 +21,8 @@ def log():
 
 def notify():
     notification = ToastNotifier()
-    notification.show_toast("Time to drink water"
-                            , "Hello " + name + " I am Waterify! Your personal water remainder :)\nIts your time to drink Water!! Water regulates the body fluid. "
-                                               "\nRead More...",
-                            duration=3,
+    notification.show_toast("Time to drink water", "Hello " + name + " I am Waterify!:)\nIts your time to drink Water!!\nRead More...",
+                            duration=4,
                             icon_path="C://Users//hp//Dropbox//PC//Downloads//Elegantthemes-Beautiful-Flat-Water.ico")
     log()
     return 0
