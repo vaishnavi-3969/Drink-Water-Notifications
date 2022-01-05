@@ -2,7 +2,7 @@ import time
 from win10toast import ToastNotifier
 import datetime
 
-
+name = input("What is your name? ")
 def getTimeInput():
     hour = int(input("Hours of interval :"))
     minutes = int(input("Minutes of interval :"))
@@ -21,7 +21,11 @@ def log():
 
 def notify():
     notification = ToastNotifier()
-    notification.show_toast("Time to drink water", "Time to drink Water!! Water regulates the body fluid. Read More...",duration=3, icon_path="C://Users//hp//Dropbox//PC//Downloads//Elegantthemes-Beautiful-Flat-Water.ico")
+    notification.show_toast("Time to drink water"
+                            , "Hello " + name + " I am Waterify! Your personal water remainder :)\nIts your time to drink Water!! Water regulates the body fluid. "
+                                               "\nRead More...",
+                            duration=3,
+                            icon_path="C://Users//hp//Dropbox//PC//Downloads//Elegantthemes-Beautiful-Flat-Water.ico")
     log()
     return 0
 
