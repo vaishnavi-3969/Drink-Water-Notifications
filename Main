@@ -23,7 +23,7 @@ def notify():
     notification = ToastNotifier()
     notification.show_toast("Time to drink water", "Hello " + name + " I am Waterify!:)\nIts your time to drink Water!!\nRead More...",
                             duration=4,
-                            icon_path="C://Users//hp//Dropbox//PC//Downloads//Elegantthemes-Beautiful-Flat-Water.ico")
+                            icon_path="https://raw.githubusercontent.com/vaishnavi-3969/Drink-Water-Notifications/main/Elegantthemes-Beautiful-Flat-Water.ico")
     log()
     return 0
 
